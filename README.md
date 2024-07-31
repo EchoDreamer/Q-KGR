@@ -1,5 +1,6 @@
 # Question-guided Knowledge Graph Re-scoring and Injection for Knowledge Graph Question Answering
 Figure 3, from the paper, is presented in the Qualitative Analysis section (6.1). 
+
 Figure3_nodes is an extended version of Figure 3, containing more nodes. This expanded graph demonstrates that the edge scoring method predicts higher scores for question-relevant edges, rather than the high-relevance edges connecting to more question-and-answer nodes.
 
 Question:
