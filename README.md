@@ -12,23 +12,25 @@ Options:
 Model Prediction: 
 w/o QG-KGR:  (E) kaleidoscope        Ours:  (B) window
 
-\begin{table*}[!ht]
-    \centering
-    \scalebox{0.73}{
-    \begin{tabular}{llcccccc}
-    \toprule
-        LLM & Method & 0 & 10\%  & 20\% &  30\%  & 40\% & 50\%  \\ 
-        \midrule
-        \multirow{2}{*}{\textbf{FLAN-T5-XL}} 
-        & w/o Q-KGR & 73.73 & 73.30 & 72.86 & 71.53 & 69.25 & 65.45  \\ 
-        & Ours & 78.43 (+4.7) & 78.44 (+5.14)  & 78.30 (+5.44)  & 78.14 (+6.61) &  77.54 (+8.29)  & 76.28 (+10.83) \\ 
-        \midrule
-        \multirow{2}{*}{\textbf{FLAN-T5-XXL}} 
-        & w/o Q-KGR & 79.61 & 79.53 & 78.70 & 76.01 & 74.31 & 72.27  \\ 
-        & Ours & 80.98(+1.37) & 80.93(+1.40) & 80.56(+1.86) & 79.63 (+3.62) & 78.52 (+4.21) & 77.89 (+5.62)  \\ 
-        \bottomrule
-    \end{tabular}
-    }
-    \caption{Performances by adjusting the number of distractor nodes on the OBQA datasets.}
-    \label{tab:noisy}
-\end{table*}
+
+
+## Install 🛠️
+
+1. Clone this repository and navigate to Q-KGR folder
+
+```bash
+git clone https://github.com/EchoDreamer/Q-KGR.git
+cd Q-KGR
+```
+
+2. Install packages
+
+```bash
+conda create -n graphllm python=3.8
+conda activate graphllm
+conda install pytorch==2.0.1 torchvision==0.15.2 torchaudio==2.0.2 pytorch-cuda=11.8 -c pytorch -c nvidia
+cd transformers-4.33.3
+pip install -e . 
+bash setup.sh
+```
+
