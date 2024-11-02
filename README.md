@@ -25,6 +25,7 @@ cd Q-KGR
 conda create -n graphllm python=3.8
 conda activate graphllm
 conda install pytorch==2.0.1 torchvision==0.15.2 torchaudio==2.0.2 pytorch-cuda=11.8 -c pytorch -c nvidia
+# Download transformers-4.33.3 from https://huggingface.co/271754echo/Q-KGR/ to ./
 cd transformers-4.33.3
 pip install -e . 
 bash setup.sh
