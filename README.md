@@ -182,6 +182,9 @@ For PIQA, upload results to  [Submissions — Physical IQa: Physical Interaction
 
 ## Acknowledgement 💌
 This repo is built upon the following work:
+
 GreaseLM: Graph REASoning Enhanced Language Models for Question Answering 
+
 QA-GNN: Question Answering using Language Models and Knowledge Graphs
+
 DRAGON: Deep Bidirectional Language-Knowledge Graph Pretraining
